@@ -1,16 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Lazy Lab</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="OK" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet"href="styles/styles.css">
-  </head>
-    <body>
-      
-<h1>My First Webpage</h1>
-<p> by Corey</p>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Lazy Lab</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Papyrus, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #ec1010;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      opacity: 0.9;
+    }
+
+    /* Navigation */
+    nav {
+      background: #111827;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #a5b4fc;
+    }
+
+    /* Main content */
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #4f46e5;
+    }
+
+    /* Footer */
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lazy Lab</h1>
+    <p>Chatting and Gaming For All Ages</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main class="container">
+    <section class="cards">
+      <div class="card">
+        <h3>Chat Room</h3>
+        <p>Beautiful layouts with modern UI and UX principles.</p>
+      </div>
+      <div class="card">
+        <h3>Anime room</h3>
+        <p>Fast, responsive, and scalable web solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Support</h3>
+        <p>Reliable support to keep your site running smoothly.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Corey Garner. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
