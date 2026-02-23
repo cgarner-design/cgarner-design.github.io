@@ -1,0 +1,29 @@
+
+body{
+    margin: 0;
+    background-color: #ec4f4f;
+   color: #37bd0f;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'times new roman', sans-serif;
+    color: #17044b;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'times new roman', sans-serif;
+    color: #17044b;
+}   
+@media (device-aspect-ratio) {aspect-ratio: 16/9} and (max-width: 600px) 
+    body{
+        background-color: #ec4f4f;
+    }
+    
+    h1{
+        font-size: 50px;
+        text-align: center;
+        font-family: 'times new roman', sans-serif;
+        color: #17044b;
+    }
