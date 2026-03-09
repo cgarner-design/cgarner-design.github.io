@@ -59,13 +59,13 @@ header{
 header h1{
     padding-top: 200px; 
     color: rgb(66, 46, 245);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Papyrus, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 100px;
 }
 
 header p{
     color: rgb(66, 46, 245);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Papyrus, 'Times New Roman', Times, serif, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
     padding-top: -150px;
 }
