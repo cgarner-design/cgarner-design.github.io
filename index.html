@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Day 5</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style/Day4.css" />
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-  <style>
-    .row {
-      display: flex;
-    }
-    .column {
-      flex: 1;
-      padding: 10px;
-      border: 1px solid #0004ff;
-    }
-  @media all and (min-width: 320px) and (max-width: 480px){
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mondayblue.css">
+<style>  @media all and (min-width: 320px) and (max-width: 480px){
     body{
         background-color: #bfcc08;}
     }
@@ -34,38 +24,131 @@
     body{
         background-color: #f73434;}
     }
-</style>
+    </style>
 </head>
 <body>
-  <header>
-    My Webpage
-  </header>
-  <nav>
-    <a href="Day 1/index.html">Home</a>
-    <a href="Day 2/index.html">Day2</a>
-    <a href="Day 3/index.html">Day3</a>
-    <a href="Day 4/index.html">Day4</a>
-    <a href="Day 5/index.html">Day5</a>
-    Place for the navigation  
-  </nav>
-  <main>
-   <h1>Good day Chapter 6</h1>
+    <header>
+        <nav>
+            <div class="container navbar">
+               <div class="logo">Lazy Lab</div> 
+            
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">coursework</a></li>
+                        <a href="/cist1510_fy2026/Chpt%207/index.html">Chap 1</a>
+
+                   <li><a href="#">resources</a></li>
+                                        <li class="dropdown">
+                        <a href="#">Advance_Work</a>
+                        <div class="dropdown-content">
+                            <a href="#">Improve Webpage</a>
+                            <a href="#">Tables & Forms</a>
+                        </div>
+                    </li>
+
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header_text">
+            <h1>Lazy Lab</h1>
+            <p>"For Coding and Relaxation"</p>
+        </div>
+                  
+          
+        </nav>
     
-    <div class="container">
-      <div class="column"><h2>Introduction to HTML </h2> </div>
-      <div class="column"><h2>Introduction to CSS </h2> </div>
-      <div class="column"><h2></h2> </div>
+         
+    </header>
+    <!-- ABOUT SECTION -->
+<section id="about">
+    <div class="container about">
+        <div>
+            <img src="" alt="Profile Picture">
+        </div>
+        <div>
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm a passionate web developer who enjoys building responsive
+                and user-friendly websites using modern web technologies.
+                I specialize in clean design, accessibility, and performance.
+            </p>
+        </div>
     </div>
-    <div class="about">
-      <div class="item">Column 1</div>
-      <div class="item">Column 2</div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <div class="container contact">
+        <div>
+            <iframe 
+                src="https://www.google.com/maps?q=Gwinnett+Technical+College&output=embed">
+            </iframe>
+        </div>
+
+        <div>
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </div>
-    <div class="contact">
-      <div class="item">Column 1</div>
-      <div class="item">Column 2</div>
+</section>
+
+</main>
+    <main>
+        <h1></h1>
+    </main>
+    <footer>
+        <!-- FOOTER -->
+<footer>
+    <div class="container footer-container">
+        <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Guides</a></li>
+            </ul>
+        </div>
+
+<div class="footer-col">
+    <h3>Follow Us</h3>
+    <ul class="social-icons">
+        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+    </ul>
+</div>
     </div>
-  </main>
-  <footer>
-    Place for the footer
-  </footer>
+</footer>
+</body>
 </html>
