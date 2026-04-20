@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/mondayblue.css">
-<style>  @media all and (min-width: 320px) and (max-width: 480px){
+    
+    
+    <link rel="shortcut icon"href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/png" sizes="32x32">
+    
+
+    <style>  @media all and (min-width: 320px) and (max-width: 480px){
     body{
         background-color: #bfcc08;}
     }
@@ -34,13 +40,25 @@
             
                 <input type="checkbox" id="menu-toggle" class="menu-toggle">
                 <label for="menu-toggle" class="hamburger">&#9776;</label>
+                <ul class="nav-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Chapters</a>
+                        <div class="dropdown-content">
+
+                <a href="Chpt 1.html ">Chap1</a>
+                            <a href="Chpt 2.html">Chap2</a>
+                            <a href="Chpt 3.html">Chap3</a>
+                            <a href="Chpt 4.html">Chap4</a>
+                            <a href="Chpt 5.html">Chap5</a>
+                            <a href="Chpt 6.html">Chap6</a>
+
 
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
 
                     <li class="dropdown">
                         <a href="#">coursework</a></li>
-                        <a href="/cist1510_fy2026/Chpt%207/index.html">Chap 1</a>
+                        
 
                    <li><a href="#">resources</a></li>
                                         <li class="dropdown">
@@ -50,7 +68,6 @@
                             <a href="#">Tables & Forms</a>
                         </div>
                     </li>
-
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -75,9 +92,7 @@
         <div>
             <h2>About Me</h2>
             <p>
-                Hello! I'm a passionate web developer who enjoys building responsive
-                and user-friendly websites using modern web technologies.
-                I specialize in clean design, accessibility, and performance.
+                Hello! And welcome to my website. My name is Corey Garner, and I am a passionate web developer with a love for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various web development frameworks. I enjoy learning new technologies and staying up-to-date with the latest trends in web development. In my free time, I like to work on personal projects, contribute to open-source, and explore new design ideas. Thank you for visiting my website!
             </p>
         </div>
     </div>
@@ -150,5 +165,80 @@
 </div>
     </div>
 </footer>
+<script>
+// MOBILE MENU TOGGLE (optional enhancement)
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('change', () => {
+    if (menuToggle.checked) {
+        navLinks.style.display = 'block';
+    } else {
+        navLinks.style.display = '';
+    }
+});
+
+
+// DROPDOWN MENU (click for mobile)
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+    const link = dropdown.querySelector('a');
+
+    link.addEventListener('click', (e) => {
+        // Prevent jumping to top
+        e.preventDefault();
+
+        // Toggle dropdown
+        dropdown.classList.toggle('active');
+    });
+});
+
+
+// CLOSE DROPDOWN IF CLICK OUTSIDE
+document.addEventListener('click', (e) => {
+    dropdowns.forEach(dropdown => {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('active');
+        }
+    });
+});
+
+
+// SMOOTH SCROLL
+const navAnchors = document.querySelectorAll('a[href^="#"]');
+
+navAnchors.forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+
+// FORM SUBMISSION
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = form.querySelector('input[type="text"]').value;
+    const email = form.querySelector('input[type="email"]').value;
+    const message = form.querySelector('textarea').value;
+
+    if (name && email && message) {
+        alert("Thanks, " + name + "! Your message has been sent.");
+        form.reset();
+    } else {
+        alert("Please fill out all fields.");
+    }
+});
+</script>
 </body>
 </html>
