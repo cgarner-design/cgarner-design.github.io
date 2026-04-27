@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Lab</title>
+
+    <link rel="stylesheet" href="./css/mondayblue.css">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/png" sizes="32x32">
+
+    <style>
+        @media all and (min-width: 320px) and (max-width: 480px){
+            body { background-color: #bfcc08; }
+        }
+        @media all and (min-width: 481px) and (max-width: 768px){
+            body { background-color: #34f734; }
+        }
+        @media all and (min-width: 769px) and (max-width: 1279px){
+            body { background-color: #5834f7; }
+        }
+        @media all and (min-width: 1280px) and (max-width: 1920px){
+            body { background-color: #f73434; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="container navbar">
+            <div class="logo">Lazy Lab</div> 
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Chapters</a>
+                    <div class="dropdown-content">
+                        <a href="Chpt 1.html">Chap1</a>
+                        <a href="Chpt 2.html">Chap2</a>
+                        <a href="Chpt 3.html">Chap3</a>
+                        <a href="Chpt 4.html">Chap4</a>
+                        <a href="Chpt 5.html">Chap5</a>
+                        <a href="Chpt 6.html">Chap6</a>
+                    </div>
+                </li>
+
+                <li><a href="#">Coursework</a></li>
+                <li><a href="#">Resources</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Advance Work</a>
+                    <div class="dropdown-content">
+                        <a href="#">Improve Webpage</a>
+                        <a href="#">Tables & Forms</a>
+                    </div>
+                </li>
+
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header_text">
+        <h1>Lazy Lab</h1>
+        <p>"For Coding and Relaxation"</p>
+    </div>
+</header>
+
+<main>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <div class="container about">
+        <div>
+            <img src="images/FB_Profile.jpg" alt="FB Profile">
+        </div>
+        <div>
+            <h2>About Me</h2>
+            <p>
+                Hello! And welcome to my website. My name is Corey Garner, and I am a passionate web developer...
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <div class="container contact">
+        <div>
+            <iframe 
+                src="https://www.google.com/maps?q=Gwinnett+Technical+College&output=embed">
+            </iframe>
+        </div>
+
+        <div>
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-container">
+
+        <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Guides</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
