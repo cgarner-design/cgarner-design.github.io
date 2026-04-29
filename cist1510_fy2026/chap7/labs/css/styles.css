@@ -1,0 +1,221 @@
+<!--
+Student Name:Corey Garner
+File:Name: style.css
+Date: April 20, 2026
+-->
+
+/* CSS Reset */
+
+body, header, nav, main, footer, img,{
+    
+        margin: 0
+        padding: 0
+        border: 0
+    }
+   
+/* Update your existing CSS reset rule for 'ul' */
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    }
+    /* Update nav ul and nav li */
+    nav ul { 
+    margin: 0;
+    padding: 0;
+
+    }
+
+    nav li {
+        display: block;
+        border-top: 0.5px solid #f6eee4 ;
+    }
+/* Image styling */
+.round{
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto; /* Sets top/bottom to 0, left/right to auto */
+}
+
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style rule for body images */
+nav {
+    background-color: #f6eee4;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Style rule for navigation area */
+nav{
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+/* Styles rule for main content */
+
+
+main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+.mobile h1{
+    font-family: 'Emblema One', cursive; /*Example declaration*/
+}
+
+.mobile h3 {
+    font-family: 'Lora', serif;
+}
+
+main {
+    font-family: 'Lora', serif;
+}
+/* Style rule for footer content */
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0%;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    /* Tablet Viewport: Style rule for nav area */ 
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+        padding: 0.5em;
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* Step 9: General Styles */
+aside, figure, figcaption {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #c5a687;
+}
+figure {
+    border: 4px solid #2a1f14;
+    box-shadow: 6px 6px 10px #c5a687;
+    max-width: 400px;
+    margin: 2% auto;
+}
+
+figcaption {
+    padding: 2%;
+    border-top: 4px solid #2a1f14;
+}
+
+/* Step 10: Tablet Media Query */
+@media screen and (min-width: 481px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* Step 11 & 12: Desktop Media Query */
+@media screen and (min-width: 769px) {
+    nav li a:hover {
+        opacity: 0.5;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    aside {
+        grid-column: 1 / span 3;
+        font-size: 2em;
+    }
+}
+
+/* Step 13: Large Desktop Media Query */
+@media screen and (min-width: 1025px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    aside {
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
+}
